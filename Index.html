@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, intial-scale= 1.0">
-        <Title>Code Quizer</Title>
-        <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Quiz v3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hide" id="score">Score: </div>
+    </div>
+    <div class="container">
+      <!-- Start Prompt -->
+      <div class="text-center" id="start-prompt">
+        <h1>Welcome to the Code Quiz</h1>
+        <p>
+         Answer correctly to get a point. Answer wrong and lose time!
+         Enter your initials at the end of the game to save your score.
+        </p>
+        <button id="start-button">Start!</button>
+      </div>
 
-        <!--link Java Script-->
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <!--Start Quiz Button-->
-        <div class = "start_btn"><button>Start Quiz</button></div>
+      <!-- Question Block -->
+      <div class="text-center hide" id="question-prompt">
+        <h3 id="question-text"></h3>
+        <div id="options">
 
-        <!--Info box-->
-        <div class = "info_box">
-            <div Class = "info_title">
-                <span>Some Rules of this Quiz</span>
-            </div>
-            <div class="info_list"></div>
-            <div class="info"></div>
-            <div class="info"></div>
-            <div class="info"></div>
-            <div class="info"></div>
-            <div class="info"></div>
         </div>
-    </body>
+      </div>
+      <button id="reset-button" class="hide" onclick="window.location.reload()">RESET</button>
+
+      <!-- Timer -->
+      <div class="hide" id="timer">100</div>
+    </div>
+
+  
+
+        <!-- SHOW SCORE button -->
+      <button id="high-score">SHOW HIGH SCORE</button>
+      <!-- HIDE SCORE button -->
+      <button class="hide" id="hide-score">HIDE HIGH SCORE</button>
+
+      <div id="highScore" class="hide"></div>
+    <script src="script.js"></script>
+  </body>
 </html>

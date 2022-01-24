@@ -1,6 +1,43 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+*{
+    text-align: center;
+    margin: 10px;
+  }
+  * button {
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+  }
+
+  body {
+      background-color: rgb(109, 44, 141);     
+  }
+  
+  .container {
+      width: 600px;
+      margin: 0 auto;
+    }
+    
+    .text-center {
+      text-align: center;
+    }
+    #start-prompt {
+      text-align: center;
+    }
+    
+    #timer {
+      position: fixed;
+      padding: 10px;
+      top: 0;
+      right: 0;
+    }
+  
+    #score {
+      position: fixed;
+      padding: 10px;
+      top: 0;
+      left: 0;
+    }
+    
+    .hide {
+      display: none;
+    }
